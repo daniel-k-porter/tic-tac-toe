@@ -50,7 +50,7 @@ $(function() {
 
       // Toggle the current elements player class using jQuery's
       // `.toggleClass` method.
-      $el.toggleClass(player);
+      $el.addClass(player);
     } else {
       // Otherwise, log that the element has already been played
       console.log("That Square has been played");
