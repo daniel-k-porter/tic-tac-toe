@@ -66,17 +66,9 @@ $(function() {
     // Grab all elements with `class='box'` by using
     // jQuery
     var $boxes = $('.box');
-    // Iterate through the array of boxes
-    for (var i = 0; i < $boxes.length; i++) {
-      // turn jQueryify an html element using jquery
-      var $box = $($boxes[i]);
-      // Reset the inner HTML to be 'nbsp' with jQuery's
-      // `.html` method.
-      $box.html('&nbsp;');
-      // Reset the class list to be only 'box'
-      // by using jQuery's `.removeClass` method
-      $box.removeClass('X O');
-    }
+//       // Reset the class list to be only 'box'
+//       // Reset the inner HTML to be 'nbsp' with jQuery's
+    $boxes.html('&nbsp;').removeClass('X O');
     // Reset the current player to be 'X'
     // NOTE: THIS IS TRICKY
     if (currentPlayer() === 'X') {
